@@ -4,7 +4,7 @@
 
 ### Understand what your job search is telling you.
 
-CandidLyzer is a production SaaS platform that helps job seekers organize applications, measure performance, identify funnel bottlenecks, and turn job-search data into practical next actions.
+CandidLyzer is a production SaaS platform that helps job seekers organize applications, measure search performance, identify funnel bottlenecks, and turn job-search data into practical next actions.
 
 [Open CandidLyzer](https://candidlyzer.com) · [View pricing](https://candidlyzer.com/#pricing) · [Read the FAQ](https://candidlyzer.com/faq)
 
@@ -15,8 +15,6 @@ CandidLyzer is a production SaaS platform that helps job seekers organize applic
 > [!NOTE]
 > This repository is a public product and engineering showcase.  
 > The proprietary CandidLyzer source code and production configuration are maintained privately.
-
-![CandidLyzer product overview](./assets/cover.png)
 
 ## The problem
 
@@ -38,7 +36,7 @@ CandidLyzer combines application tracking, funnel analytics, forecasting, job-pa
 
 Users record applications and update their outcomes over time. CandidLyzer then transforms those records into performance signals that are easier to understand and act on.
 
-The product is designed around a simple workflow:
+The product follows a simple workflow:
 
 1. **Track** applications in one structured pipeline.
 2. **Understand** response patterns, sources, and bottlenecks.
@@ -60,8 +58,6 @@ Keep job-search records organized with:
 
 The tracker supports the full journey from an initial application to a response, interview, rejection, or offer.
 
-![CandidLyzer application tracker](./assets/applications.png)
-
 ### Career dashboard
 
 The dashboard converts application records into a readable overview of the search.
@@ -76,8 +72,6 @@ It includes:
 - source performance;
 - recent trends;
 - high-level diagnostic signals.
-
-![CandidLyzer dashboard](./assets/dashboard.png)
 
 ### Funnel diagnostics
 
@@ -131,8 +125,6 @@ A report may include:
 - a success metric for evaluating progress.
 
 Reports are designed to produce a concrete next move rather than generic career advice.
-
-![CandidLyzer coaching report](./assets/coaching.png)
 
 ### Job-page parsing
 
@@ -191,8 +183,6 @@ CandidLyzer uses two connected visual systems:
 - a focused dark workspace for tracking applications and reading analytics.
 
 The authenticated product is responsive across desktop and mobile devices. On smaller screens, the interface removes unnecessary framing and prioritizes content with bottom navigation.
-
-![CandidLyzer mobile interface](./assets/mobile.png)
 
 ## System architecture
 
@@ -256,7 +246,7 @@ Analytics calculations are handled by a dedicated internal Rust service. Externa
 - Rust
 - Axum
 - Tokio
-- internal authenticated service communication
+- authenticated internal service communication
 
 ### Data
 
@@ -344,8 +334,6 @@ Security controls include:
 
 Sensitive credentials and environment variables are not stored in this repository.
 
-For responsible vulnerability reporting, see [SECURITY.md](./SECURITY.md).
-
 ## Privacy
 
 CandidLyzer stores the account and application information needed to provide the service.
@@ -383,6 +371,17 @@ The project uses several testing layers:
 
 Critical user journeys are tested across service boundaries where configuration, cookies, redirects, and webhooks can introduce failures that isolated unit tests may not detect.
 
+## Product principles
+
+CandidLyzer is built around a few core principles:
+
+- **Clarity before complexity** — analytics should help users decide what to do next.
+- **Useful Free access** — the free product should remain genuinely functional.
+- **Honest signals** — forecasts and diagnostics are guidance, not guarantees.
+- **Security by default** — authentication, billing, and internal services should fail safely.
+- **One coherent experience** — design and engineering should feel like parts of the same product.
+- **Production readiness** — reliability and maintainability matter alongside features.
+
 ## Current status
 
 CandidLyzer is live and accepting users.
@@ -399,20 +398,9 @@ Current development priorities include:
 
 The product is being developed iteratively around real usage rather than treated as a finished one-time portfolio project.
 
-## Product principles
-
-CandidLyzer is built around a few core principles:
-
-- **Clarity before complexity** — analytics should help users decide what to do next.
-- **Useful Free access** — the free product should remain genuinely functional.
-- **Honest signals** — forecasts and diagnostics should be presented as evidence-based guidance, not guarantees.
-- **Security by default** — authentication, billing, and internal services should fail safely.
-- **One coherent experience** — design, engineering, and product behavior should feel like parts of the same system.
-- **Production readiness** — reliability and maintainability matter alongside feature development.
-
 ## Repository purpose
 
-This repository exists to present:
+This repository presents:
 
 - the CandidLyzer product;
 - its user experience;
@@ -443,4 +431,4 @@ CandidLyzer is designed and developed by **Hektor Qafarov**.
 
 Copyright © 2026 Hektor Qafarov. All rights reserved.
 
-The CandidLyzer name, branding, interface designs, screenshots, documentation, and other materials in this repository may not be reproduced or used commercially without prior written permission.
+The CandidLyzer name, branding, interface designs, documentation, and other materials in this repository may not be reproduced or used commercially without prior written permission.
