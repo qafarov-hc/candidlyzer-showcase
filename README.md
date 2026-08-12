@@ -6,7 +6,7 @@
 
 CandidLyzer is a production SaaS platform that helps job seekers organize applications, measure performance, identify funnel bottlenecks, and turn job-search data into practical next actions.
 
-[Open CandidLyzer](https://candidlyzer.com) · [View pricing](https://candidlyzer.com/pricing) · [Read the FAQ](https://candidlyzer.com/faq)
+[Open CandidLyzer](https://candidlyzer.com) · [View pricing](https://candidlyzer.com/#pricing) · [Read the FAQ](https://candidlyzer.com/faq)
 
 </div>
 
@@ -181,7 +181,7 @@ CandidLyzer keeps the Free plan useful for regular application tracking while re
 
 Plan limits and availability may evolve as the product develops.
 
-[Compare plans](https://candidlyzer.com/pricing)
+[Compare plans](https://candidlyzer.com/#pricing)
 
 ## Product experience
 
@@ -432,7 +432,7 @@ It does **not** contain:
 ## Links
 
 - **Live product:** [candidlyzer.com](https://candidlyzer.com)
-- **Pricing:** [candidlyzer.com/pricing](https://candidlyzer.com/pricing)
+- **Pricing:** [candidlyzer.com/pricing](https://candidlyzer.com/#pricing)
 - **FAQ:** [candidlyzer.com/faq](https://candidlyzer.com/faq)
 - **Developer:** [Hektor Qafarov](https://github.com/qafarov-hc)
 - **Contact:** [qafarov.dev@gmail.com](mailto:qafarov.dev@gmail.com)
